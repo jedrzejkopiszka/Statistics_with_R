@@ -1,4 +1,4 @@
-#145304 kopiszka jedrzej
+# Read data from .csv file
 data = read.csv("descriptive.csv", sep=";"); data
 
 #Ex1
@@ -16,7 +16,7 @@ hist(ex1_data, freq = FALSE,
      xlab = "tumor inside mouse")
 
 #Ex2
-ex2_table = rbind(c(4,3,2,1), c(7,16,25,12)); ex2_table #Construct a table
+ex2_table = rbind(c(4,3,2,1), c(7,16,25,12)); ex2_table #Construct a frequency table
 
 #a) probability distribution
 ex2_distr = function(data){
@@ -108,8 +108,5 @@ ex5_p = ex5_beside/ex5_n; ex5_p #p_hat = 0.2
 ex5_conf = 0.98
 binom.test(ex5_beside, ex5_n, conf.level = ex5_conf)$conf.int # Confidence interval is 0.1221361 0.2984894
 # Interpretation: With confidence 98% proportion falls between 0.12 and 0.3. This means 12% to 30% percent of the
-#work is done outside the workplace.
-
-#Punishment: Proportion is very likely to exceed 0.15 as our proportion with 98% of confidence is between 0.12 and 0.3,
-# this means that with high probability more than 15% of work is done outside workplace, though punishment should be based on
-# evidence not high probability of committing a crime. To punish, one must base on population not sample.
+#work is done outside the workplace.Proportion is very likely to exceed 0.15 as our proportion with 98% of confidence is between 0.12 and 0.3,
+# this means that with high probability more than 15% of work is done outside workplace
