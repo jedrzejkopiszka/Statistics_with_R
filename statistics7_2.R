@@ -72,10 +72,10 @@ ex2_prob(2, ex2_distr_tab)
 
 #Ex3
 set.seed(145304)
-ex3_binom07 = rbinom(500, 30, 0.07)
+ex3_binom07 = rbinom(500, 30, 0.07)  #binomial distribution with sample size =30, std=0.07
 ex3_binom47 = rbinom(500, 30, 0.47)
 
-par(mfrow=c(1,2))
+par(mfrow=c(1,2))  #two plots side by side
 hist(ex3_binom07, 
      freq = FALSE,
      main = "Binomial distribution for n=30 and p=0.07 and its approximation")
@@ -90,14 +90,15 @@ curve(dnorm(x, 30*0.47, sqrt(30*0.47*(1-0.47))),
       add=TRUE, 
       col="red")
 
+
 #Ex4
-ex4_mean = 260
-ex4_std = 150
-ex4_n = 10000
-#a) distribution
+ex4_mean = 260 #206 $ average claim
+ex4_std = 150 # std in $ of claims
+ex4_n = 10000  # number of claims in a year
+#a) Normal probability distribution with standard devaition=150, mean = 260
 curve(dnorm(x, ex4_n*ex4_mean, ex4_std/sqrt(ex4_n)))
 
-#b) Probability of total yearly claim does not exceed 2.5 million
+#b) Probability of the fact that all (total) claims in one year do not exceed 2.5 million
 pnorm(2500000, 10000*260, 150/sqrt(ex4_n)) # Returns 0, but that is not the true result
 
 
