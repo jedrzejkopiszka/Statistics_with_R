@@ -1,5 +1,5 @@
 # Statistics wih R
-Solutions to exercises from Statistics class (3rd semester of AI). 
+Solutions to exercises from Statistics class (3rd semester of ). 
 
 ## Where can I find the exercises?
 Files provided do not contain whole content of an exercise. Pdfs with exercises are available at prof. Katarzyna Filipiak [webpage](http://katarzyna.filipiak.pracownik.put.poznan.pl/AI.html). To get the permission you must be a student of PUT or write [here](http://katarzyna.filipiak.pracownik.put.poznan.pl/kontakt.html)
